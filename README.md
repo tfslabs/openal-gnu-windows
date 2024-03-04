@@ -12,19 +12,17 @@ To build this library, you will need:
 * [CMake](https://www.cmake.org/) version 3 or newer installed on your machine. You can download it from the official website and follow their installation instructions.
 * [Python 3.9+](https://python.org)
 
+
 > :warning:
 >
 > Ensure you can run `make`, `gcc`  and `g++` from the command line without issues.
 
 Additionally, you may need to install these libraries as the minimum requirements:
 
-* PulseAudio
-* JACK
-* OpenSL
-* PortAudio
-* ZLIB
-* MySOFA
-* SndFile
+* [Dynamic Linking Extension for GNU Windows](https://github.com/tfslabs/dlfcn-gnu-windows)
+* [OGG Extension for GNU Windows](https://github.com/tfslabs/ogg-gnu-windows)
+* [Vorbis Extension for GNU Windows](https://github.com/tfslabs/vorbis-gnu-windows)
+* [Meson + Ninja Extension for GNU Windows](https://github.com/tfslabs/meson-ninja-gnu-windows)
 
 Just run the  following commands in a terminal window to get started:
 
