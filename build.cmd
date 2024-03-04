@@ -5,6 +5,6 @@ md .bin
 md .cmake
 
 cd .cmake
-cmake -G "Unix Makefiles" ..
-make
-make DESTDIR="../.bin" install
+cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX="../.bin" -DCMAKE_BUILD_TYPE=Debug ..
+cmake --build .
+cmake --install .
