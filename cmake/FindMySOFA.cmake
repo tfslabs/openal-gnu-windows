@@ -49,9 +49,11 @@ find_library(MYSOFA_LIBRARY NAMES mysofa
              DOC "The MySOFA library"
 )
 
+if(NOT MINGW)
 find_library(MYSOFA_M_LIBRARY NAMES m
              DOC "The math library for MySOFA"
 )
+endif()
 
 # handle the QUIETLY and REQUIRED arguments and set MYSOFA_FOUND to TRUE if
 # all listed variables are TRUE

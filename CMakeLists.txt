@@ -503,10 +503,12 @@ endif()
 
 # Some systems need libm for some math functions to work
 set(MATH_LIB )
+if(NOT MINGW)
 check_library_exists(m pow "" HAVE_LIBM)
 if(HAVE_LIBM)
     set(MATH_LIB ${MATH_LIB} m)
     set(CMAKE_REQUIRED_LIBRARIES ${CMAKE_REQUIRED_LIBRARIES} m)
+endif()
 endif()
 
 # Some systems need to link with -lrt for clock_gettime as used by the common
@@ -1268,7 +1270,7 @@ if(ALSOFT_UTILS OR ALSOFT_EXAMPLES)
     endif()
 endif()
 
-if(NOT WIN32)
+if(NOT MSVC)
     set(LIBNAME "openal")
 else()
     set(LIBNAME "OpenAL32")
@@ -1377,7 +1379,10 @@ else()
     add_library(${IMPL_TARGET} SHARED ${OPENAL_OBJS} ${ALC_OBJS} ${CORE_OBJS} ${RC_CONFIG}
         ${TARGET_PUBLIC_HEADERS})
     if(WIN32)
-        set_target_properties(${IMPL_TARGET} PROPERTIES PREFIX "")
+        set_target_properties(${IMPL_TARGET} PROPERTIES
+			OUTPUT_NAME openal
+			RUNTIME_OUTPUT_NAME openal-${LIB_MAJOR_VERSION}
+			ARCHIVE_OUTPUT_NAME openal)
     endif()
     target_link_libraries(${IMPL_TARGET} PRIVATE common ${LINKER_FLAGS} ${EXTRA_LIBS} ${MATH_LIB})
 
