@@ -6,5 +6,5 @@ md .cmake
 
 cd .cmake
 cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX="../.bin" ..
-cmake --build .
-cmake --install .
+make -j4 .
+make DESTDIR="../.bin" install
