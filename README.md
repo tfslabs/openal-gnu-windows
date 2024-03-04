@@ -12,7 +12,6 @@ To build this library, you will need:
 * [CMake](https://www.cmake.org/) version 3 or newer installed on your machine. You can download it from the official website and follow their installation instructions.
 * [Python 3.9+](https://python.org)
 
-
 > :warning:
 >
 > Ensure you can run `make`, `gcc`  and `g++` from the command line without issues.
