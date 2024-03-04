@@ -1,6 +1,8 @@
-# GNU Windows Extension
+# OpenAL Extension for GNU Windows
 
-This template helps a lot in building docs and understanding GNU Windows Extension source code, building and other related documents
+OpenAL Extension for GNU Windows.
+
+OpenAL Soft is an LGPL-licensed, cross-platform, software implementation of the OpenAL 3D audio API. It's forked from the open-sourced Windows version available originally from openal.org's SVN repository (now defunct).
 
 ## Build this library
 
@@ -14,9 +16,15 @@ To build this library, you will need:
 >
 > Ensure you can run `make`, `gcc`  and `g++` from the command line without issues.
 
-Additionally, you may need to install these libraries:
+Additionally, you may need to install these libraries as the minimum requirements:
 
-* [Lib 1]()
+* PulseAudio
+* JACK
+* OpenSL
+* PortAudio
+* ZLIB
+* MySOFA
+* SndFile
 
 Just run the  following commands in a terminal window to get started:
 
