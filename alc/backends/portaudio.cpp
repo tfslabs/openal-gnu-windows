@@ -362,7 +362,11 @@ bool PortBackendFactory::init()
     if(!pa_handle)
     {
 #ifdef _WIN32
+#if defined(__MINGW32__)
+# define PALIB "libportaudio-2.dll"
+#else
 # define PALIB "portaudio.dll"
+#endif
 #elif defined(__APPLE__) && defined(__MACH__)
 # define PALIB "libportaudio.2.dylib"
 #elif defined(__OpenBSD__)

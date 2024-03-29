@@ -10,3 +10,4 @@ Version: @PACKAGE_VERSION@
 Libs: -L${libdir} -l@LIBNAME@ @PKG_CONFIG_LIBS@
 Libs.private:@PKG_CONFIG_PRIVATE_LIBS@
 Cflags: -I${includedir} -I${includedir}/AL @PKG_CONFIG_CFLAGS@
+Cflags.private: -DAL_LIBTYPE_STATIC
