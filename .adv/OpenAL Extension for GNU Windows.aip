@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="21.4" version="21.4" Modules="simple" RootPath="." Language="en" Id="{4DA1517D-62D9-40B7-9E3F-63C06B398E48}">
-  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
-    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;FixupComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
-  </COMPONENT>
+<DOCUMENT Type="Advanced Installer" CreateVersion="19.1" version="19.1" Modules="simple" RootPath="." Language="en" Id="{A9476A40-D1E3-4C31-8E23-965410A0A0FE}">
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
-    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_PHYSICAL_MEMORY"/>
-    <ROW Property="AI_REQUIRED_PHYSICAL_MEMORY" MultiBuildValue="DefaultBuild:512" ValueLocId="-"/>
-    <ROW Property="ALLUSERS" Value="1"/>
-    <ROW Property="ARPCOMMENTS" Value="OpenAL Extension for GNU Development Kits for Windows (64-bit)" ValueLocId="*"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2024" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:3"/>
+    <ROW Property="ARPCOMMENTS" Value="OpenAL Extension for GNU Windows" ValueLocId="*"/>
     <ROW Property="ARPCONTACT" Value="welcome.tfs@outlook.com"/>
+    <ROW Property="ARPHELPLINK" Value="https://github.com/tfslabs/openal-gnu-windows/issues"/>
     <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
-    <ROW Property="ARPPRODUCTICON" Value="gnuwindows.exe" Type="8"/>
     <ROW Property="ARPURLINFOABOUT" Value="https://github.com/tfslabs/openal-gnu-windows"/>
-    <ROW Property="ARPURLUPDATEINFO" Value="https://github.com/tfslabs/openal-gnu-windows/commits/master/"/>
-    <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:5"/>
+    <ROW Property="ARPURLUPDATEINFO" Value="https://github.com/tfslabs/openal-gnu-windows/releases"/>
+    <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="Manufacturer" Value="TheFlightSims"/>
     <ROW Property="MsiLogging" MultiBuildValue="DefaultBuild:vp"/>
-    <ROW Property="ProductCode" Value="1033:{76F265AE-56C6-4F69-83FC-437EDCA8482E} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{40EF830B-4C9A-41C3-ACD9-8DEC3378CDC2} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
-    <ROW Property="ProductName" Value="OpenAL Extension for GNU Windows"/>
-    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="ProductName" Value="GNU Windows - OpenAL Extension"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
-    <ROW Property="UpgradeCode" Value="{F076BFD3-B1E1-4C68-9C62-F6A8B1AC867D}"/>
+    <ROW Property="UpgradeCode" Value="{CE436055-55CE-4644-B694-8DA42EBF6B96}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
     <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT" MultiBuildValue="DefaultBuild:Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" ValueLocId="-"/>
@@ -32,8 +28,6 @@
     <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
-    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
-    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
     <ROW Property="WindowsTypeNTDisplay" MultiBuildValue="DefaultBuild:32-bit Windows versions" ValueLocId="-"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
@@ -52,62 +46,60 @@
     <ROW Directory="share_Dir" Directory_Parent="APPDIR" DefaultDir="share"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="APPDIR" ComponentId="{361DB74D-41D6-4B7A-B3C8-7B87B42C4556}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="D7.1.ambdec" ComponentId="{DAEF70B4-D4E5-48CE-8DA3-076A3B1A924F}" Directory_="presets_Dir" Attributes="0" KeyPath="D7.1.ambdec" Type="0"/>
-    <ROW Component="DefaultHRTF.mhr" ComponentId="{10522DD3-1DDC-49EA-BD76-4A6F33EC52A7}" Directory_="hrtf_Dir" Attributes="0" KeyPath="DefaultHRTF.mhr" Type="0"/>
-    <ROW Component="OpenALConfig.cmake" ComponentId="{3902C976-B468-46E1-99B8-55F6EB261D49}" Directory_="OpenAL_Dir" Attributes="0" KeyPath="OpenALConfig.cmake" Type="0"/>
-    <ROW Component="Path" ComponentId="{24DBC553-3045-46C0-829B-239D77B7E0D9}" Directory_="APPDIR" Attributes="260" KeyPath="Path"/>
-    <ROW Component="Software" ComponentId="{B5C896F4-745A-4661-A9C3-370CD39B86F4}" Directory_="APPDIR" Attributes="260" KeyPath="Software"/>
-    <ROW Component="TheFlightSims" ComponentId="{3821A93A-1B3E-4354-96FF-44BCAB11C65E}" Directory_="APPDIR" Attributes="260" KeyPath="TheFlightSims"/>
-    <ROW Component="Version" ComponentId="{73AC94D4-D5D8-4DDF-8D7C-E9A5C9D34B60}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
-    <ROW Component="al.h" ComponentId="{1ED9B27B-B579-4B04-96DF-183BA084323B}" Directory_="AL_Dir" Attributes="0" KeyPath="al.h" Type="0"/>
-    <ROW Component="alrecord.exe" ComponentId="{532486D6-D074-4E03-B67E-6D2AC76A102B}" Directory_="bin_Dir" Attributes="256" KeyPath="alrecord.exe"/>
-    <ROW Component="alsoftrc.sample" ComponentId="{2C0F97B7-9EBC-4168-B417-758BA1E5C462}" Directory_="openal_Dir" Attributes="0" KeyPath="alsoftrc.sample" Type="0"/>
-    <ROW Component="altonegen.exe" ComponentId="{D67FE1B3-2E62-4696-B1F5-6B10098E81CC}" Directory_="bin_Dir" Attributes="256" KeyPath="altonegen.exe"/>
-    <ROW Component="libopenal.dll.a" ComponentId="{6A2AE939-24C7-419D-A492-2E08362F15E6}" Directory_="lib_Dir" Attributes="0" KeyPath="libopenal.dll.a" Type="0"/>
-    <ROW Component="libopenal1.dll" ComponentId="{1B9B97FC-330D-412D-8567-916F4B779281}" Directory_="bin_Dir" Attributes="256" KeyPath="libopenal1.dll"/>
-    <ROW Component="openal.pc" ComponentId="{112E095A-3E8C-4C85-B24C-29CC064C027E}" Directory_="pkgconfig_Dir" Attributes="0" KeyPath="openal.pc" Type="0"/>
-    <ROW Component="openalinfo.exe" ComponentId="{F74EB308-71FC-4E2C-B925-0074109B8DB2}" Directory_="bin_Dir" Attributes="256" KeyPath="openalinfo.exe"/>
+    <ROW Component="APPDIR" ComponentId="{53CE2E64-35A1-4AFF-885D-D6A1AB0CDB8C}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="D7.1.ambdec" ComponentId="{7F29DB16-0A4E-481C-A990-C57F6F5E262A}" Directory_="presets_Dir" Attributes="0" KeyPath="D7.1.ambdec" Type="0"/>
+    <ROW Component="DefaultHRTF.mhr" ComponentId="{09FEE524-543E-400C-81CB-B472ACDF0361}" Directory_="hrtf_Dir" Attributes="0" KeyPath="DefaultHRTF.mhr" Type="0"/>
+    <ROW Component="OpenALConfig.cmake" ComponentId="{D733E3A7-B9BD-48EA-9FC3-5D8FBA56F4D8}" Directory_="OpenAL_Dir" Attributes="0" KeyPath="OpenALConfig.cmake" Type="0"/>
+    <ROW Component="Path" ComponentId="{F7001AC1-AFBE-4261-99C0-7A1C3B43EA65}" Directory_="APPDIR" Attributes="260" KeyPath="Path"/>
+    <ROW Component="ProductID" ComponentId="{02D48C01-11BE-44EB-86A2-C23FCF5A279C}" Directory_="APPDIR" Attributes="260" KeyPath="ProductID"/>
+    <ROW Component="TheFlightSims" ComponentId="{CC13617C-FB4C-447A-8C14-45E10EA62B43}" Directory_="APPDIR" Attributes="260" KeyPath="TheFlightSims"/>
+    <ROW Component="Version" ComponentId="{1A48F941-2E8C-431A-83B7-2843172A8AA9}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
+    <ROW Component="al.h" ComponentId="{D5FBED22-2328-4FE9-A061-92B852C761E5}" Directory_="AL_Dir" Attributes="0" KeyPath="al.h" Type="0"/>
+    <ROW Component="alrecord.exe" ComponentId="{7EFC20C3-57B8-421F-B112-D8AFE45FE3D8}" Directory_="bin_Dir" Attributes="256" KeyPath="alrecord.exe"/>
+    <ROW Component="alsoftrc.sample" ComponentId="{51EFBB40-3188-434C-A41D-E54CFD08222B}" Directory_="openal_Dir" Attributes="0" KeyPath="alsoftrc.sample" Type="0"/>
+    <ROW Component="altonegen.exe" ComponentId="{B2ED2C2C-F3F3-4D88-86B8-2A9D17E956F0}" Directory_="bin_Dir" Attributes="256" KeyPath="altonegen.exe"/>
+    <ROW Component="isExtendable" ComponentId="{A565DEEF-336E-41DD-9E2E-825D978E2584}" Directory_="APPDIR" Attributes="260" KeyPath="isExtendable"/>
+    <ROW Component="libopenal.dll.a" ComponentId="{B27AA00A-B04A-44A1-B64D-717AA6735ABA}" Directory_="lib_Dir" Attributes="0" KeyPath="libopenal.dll.a" Type="0"/>
+    <ROW Component="openal.dll" ComponentId="{0ED056BE-2D38-49A1-AD35-8E13E7793AE5}" Directory_="bin_Dir" Attributes="256" KeyPath="openal.dll"/>
+    <ROW Component="openal.pc" ComponentId="{D439B751-8C28-4371-8091-8C38F7E9F79B}" Directory_="pkgconfig_Dir" Attributes="0" KeyPath="openal.pc" Type="0"/>
+    <ROW Component="openalinfo.exe" ComponentId="{98BFA0A2-6D27-45AF-ACA6-0CA5C19485C8}" Directory_="bin_Dir" Attributes="256" KeyPath="openalinfo.exe"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
-    <ROW File="alrecord.exe" Component_="alrecord.exe" FileName="alrecord.exe" Attributes="0" SourcePath="..\.bin\bin\alrecord.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="altonegen.exe" Component_="altonegen.exe" FileName="ALTONE~1.EXE|altonegen.exe" Attributes="0" SourcePath="..\.bin\bin\altonegen.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="libopenal1.dll" Component_="libopenal1.dll" FileName="LIBOPE~1.DLL|libopenal-1.dll" Attributes="0" SourcePath="..\.bin\bin\libopenal-1.dll" SelfReg="false"/>
-    <ROW File="openalinfo.exe" Component_="openalinfo.exe" FileName="OPENAL~1.EXE|openal-info.exe" Attributes="0" SourcePath="..\.bin\bin\openal-info.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="al.h" Component_="al.h" FileName="al.h" Attributes="0" SourcePath="..\.bin\include\AL\al.h" SelfReg="false"/>
-    <ROW File="alc.h" Component_="al.h" FileName="alc.h" Attributes="0" SourcePath="..\.bin\include\AL\alc.h" SelfReg="false"/>
-    <ROW File="alext.h" Component_="al.h" FileName="alext.h" Attributes="0" SourcePath="..\.bin\include\AL\alext.h" SelfReg="false"/>
-    <ROW File="efxcreative.h" Component_="al.h" FileName="EFX-CR~1.H|efx-creative.h" Attributes="0" SourcePath="..\.bin\include\AL\efx-creative.h" SelfReg="false"/>
-    <ROW File="efxpresets.h" Component_="al.h" FileName="EFX-PR~1.H|efx-presets.h" Attributes="0" SourcePath="..\.bin\include\AL\efx-presets.h" SelfReg="false"/>
-    <ROW File="efx.h" Component_="al.h" FileName="efx.h" Attributes="0" SourcePath="..\.bin\include\AL\efx.h" SelfReg="false"/>
-    <ROW File="OpenALConfig.cmake" Component_="OpenALConfig.cmake" FileName="OPENAL~1.CMA|OpenALConfig.cmake" Attributes="0" SourcePath="..\.bin\lib\cmake\OpenAL\OpenALConfig.cmake" SelfReg="false"/>
-    <ROW File="OpenALTargetsrelease.cmake" Component_="OpenALConfig.cmake" FileName="OPENAL~2.CMA|OpenALTargets-release.cmake" Attributes="0" SourcePath="..\.bin\lib\cmake\OpenAL\OpenALTargets-release.cmake" SelfReg="false"/>
-    <ROW File="OpenALTargets.cmake" Component_="OpenALConfig.cmake" FileName="OPENAL~3.CMA|OpenALTargets.cmake" Attributes="0" SourcePath="..\.bin\lib\cmake\OpenAL\OpenALTargets.cmake" SelfReg="false"/>
-    <ROW File="libopenal.dll.a" Component_="libopenal.dll.a" FileName="LIBOPE~1.A|libopenal.dll.a" Attributes="0" SourcePath="..\.bin\lib\libopenal.dll.a" SelfReg="false"/>
-    <ROW File="openal.pc" Component_="openal.pc" FileName="openal.pc" Attributes="0" SourcePath="..\.bin\lib\pkgconfig\openal.pc" SelfReg="false"/>
-    <ROW File="alsoftrc.sample" Component_="alsoftrc.sample" FileName="ALSOFT~1.SAM|alsoftrc.sample" Attributes="0" SourcePath="..\.bin\share\openal\alsoftrc.sample" SelfReg="false"/>
-    <ROW File="DefaultHRTF.mhr" Component_="DefaultHRTF.mhr" FileName="DEFAUL~1.MHR|Default HRTF.mhr" Attributes="0" SourcePath="..\.bin\share\openal\hrtf\Default HRTF.mhr" SelfReg="false"/>
-    <ROW File="D7.1.ambdec" Component_="D7.1.ambdec" FileName="3D71~1.AMB|3D7.1.ambdec" Attributes="0" SourcePath="..\.bin\share\openal\presets\3D7.1.ambdec" SelfReg="false"/>
-    <ROW File="hexquad.ambdec" Component_="D7.1.ambdec" FileName="HEX-QU~1.AMB|hex-quad.ambdec" Attributes="0" SourcePath="..\.bin\share\openal\presets\hex-quad.ambdec" SelfReg="false"/>
-    <ROW File="hexagon.ambdec" Component_="D7.1.ambdec" FileName="HEXAGO~1.AMB|hexagon.ambdec" Attributes="0" SourcePath="..\.bin\share\openal\presets\hexagon.ambdec" SelfReg="false"/>
-    <ROW File="itu5.1nocenter.ambdec" Component_="D7.1.ambdec" FileName="ITU51-~1.AMB|itu5.1-nocenter.ambdec" Attributes="0" SourcePath="..\.bin\share\openal\presets\itu5.1-nocenter.ambdec" SelfReg="false"/>
-    <ROW File="itu5.1.ambdec" Component_="D7.1.ambdec" FileName="ITU51~1.AMB|itu5.1.ambdec" Attributes="0" SourcePath="..\.bin\share\openal\presets\itu5.1.ambdec" SelfReg="false"/>
-    <ROW File="presets.txt" Component_="D7.1.ambdec" FileName="presets.txt" Attributes="0" SourcePath="..\.bin\share\openal\presets\presets.txt" SelfReg="false"/>
-    <ROW File="rectangle.ambdec" Component_="D7.1.ambdec" FileName="RECTAN~1.AMB|rectangle.ambdec" Attributes="0" SourcePath="..\.bin\share\openal\presets\rectangle.ambdec" SelfReg="false"/>
-    <ROW File="square.ambdec" Component_="D7.1.ambdec" FileName="SQUARE~1.AMB|square.ambdec" Attributes="0" SourcePath="..\.bin\share\openal\presets\square.ambdec" SelfReg="false"/>
+    <ROW File="alrecord.exe" Component_="alrecord.exe" FileName="alrecord.exe" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\bin\alrecord.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="altonegen.exe" Component_="altonegen.exe" FileName="ALTONE~1.EXE|altonegen.exe" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\bin\altonegen.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="openalinfo.exe" Component_="openalinfo.exe" FileName="OPENAL~1.EXE|openal-info.exe" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\bin\openal-info.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="openal.dll" Component_="openal.dll" FileName="openal.dll" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\bin\openal.dll" SelfReg="false"/>
+    <ROW File="al.h" Component_="al.h" FileName="al.h" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\include\AL\al.h" SelfReg="false"/>
+    <ROW File="alc.h" Component_="al.h" FileName="alc.h" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\include\AL\alc.h" SelfReg="false"/>
+    <ROW File="alext.h" Component_="al.h" FileName="alext.h" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\include\AL\alext.h" SelfReg="false"/>
+    <ROW File="efxcreative.h" Component_="al.h" FileName="EFX-CR~1.H|efx-creative.h" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\include\AL\efx-creative.h" SelfReg="false"/>
+    <ROW File="efxpresets.h" Component_="al.h" FileName="EFX-PR~1.H|efx-presets.h" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\include\AL\efx-presets.h" SelfReg="false"/>
+    <ROW File="efx.h" Component_="al.h" FileName="efx.h" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\include\AL\efx.h" SelfReg="false"/>
+    <ROW File="OpenALConfig.cmake" Component_="OpenALConfig.cmake" FileName="OPENAL~1.CMA|OpenALConfig.cmake" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\lib\cmake\OpenAL\OpenALConfig.cmake" SelfReg="false"/>
+    <ROW File="OpenALTargetsrelease.cmake" Component_="OpenALConfig.cmake" FileName="OPENAL~2.CMA|OpenALTargets-release.cmake" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\lib\cmake\OpenAL\OpenALTargets-release.cmake" SelfReg="false"/>
+    <ROW File="OpenALTargets.cmake" Component_="OpenALConfig.cmake" FileName="OPENAL~3.CMA|OpenALTargets.cmake" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\lib\cmake\OpenAL\OpenALTargets.cmake" SelfReg="false"/>
+    <ROW File="libopenal.dll.a" Component_="libopenal.dll.a" FileName="LIBOPE~1.A|libopenal.dll.a" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\lib\libopenal.dll.a" SelfReg="false"/>
+    <ROW File="openal.pc" Component_="openal.pc" FileName="openal.pc" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\lib\pkgconfig\openal.pc" SelfReg="false"/>
+    <ROW File="alsoftrc.sample" Component_="alsoftrc.sample" FileName="ALSOFT~1.SAM|alsoftrc.sample" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\share\openal\alsoftrc.sample" SelfReg="false"/>
+    <ROW File="DefaultHRTF.mhr" Component_="DefaultHRTF.mhr" FileName="DEFAUL~1.MHR|Default HRTF.mhr" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\share\openal\hrtf\Default HRTF.mhr" SelfReg="false"/>
+    <ROW File="D7.1.ambdec" Component_="D7.1.ambdec" FileName="3D71~1.AMB|3D7.1.ambdec" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\share\openal\presets\3D7.1.ambdec" SelfReg="false"/>
+    <ROW File="hexquad.ambdec" Component_="D7.1.ambdec" FileName="HEX-QU~1.AMB|hex-quad.ambdec" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\share\openal\presets\hex-quad.ambdec" SelfReg="false"/>
+    <ROW File="hexagon.ambdec" Component_="D7.1.ambdec" FileName="HEXAGO~1.AMB|hexagon.ambdec" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\share\openal\presets\hexagon.ambdec" SelfReg="false"/>
+    <ROW File="itu5.1nocenter.ambdec" Component_="D7.1.ambdec" FileName="ITU51-~1.AMB|itu5.1-nocenter.ambdec" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\share\openal\presets\itu5.1-nocenter.ambdec" SelfReg="false"/>
+    <ROW File="itu5.1.ambdec" Component_="D7.1.ambdec" FileName="ITU51~1.AMB|itu5.1.ambdec" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\share\openal\presets\itu5.1.ambdec" SelfReg="false"/>
+    <ROW File="presets.txt" Component_="D7.1.ambdec" FileName="presets.txt" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\share\openal\presets\presets.txt" SelfReg="false"/>
+    <ROW File="rectangle.ambdec" Component_="D7.1.ambdec" FileName="RECTAN~1.AMB|rectangle.ambdec" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\share\openal\presets\rectangle.ambdec" SelfReg="false"/>
+    <ROW File="square.ambdec" Component_="D7.1.ambdec" FileName="SQUARE~1.AMB|square.ambdec" Attributes="0" SourcePath="..\..\.bin\openal-gnu-windows\bootstrap\share\openal\presets\square.ambdec" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
   </COMPONENT>
-  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
-    <ROW Action="AI_DetectSoftware" Sequence="151"/>
-  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
-    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" SummInfoMetadata="Page Count:450" UseLargeSchema="true" MsiPackageType="x64"/>
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true" MsiPackageType="x64"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
     <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
@@ -129,7 +121,6 @@
     <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
-    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
     <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
@@ -161,26 +152,23 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
     <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
-    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
     <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
     <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
     <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
     <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
-    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
     <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
     <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
-    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
     <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
-    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFiles64Folder]\GNU Windows"/>
-    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="DefaultBuild:[ProductName]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:C:\gnu-windows"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
     <ROW Feature_="MainFeature" Component_="APPDIR"/>
     <ROW Feature_="MainFeature" Component_="alrecord.exe"/>
     <ROW Feature_="MainFeature" Component_="altonegen.exe"/>
-    <ROW Feature_="MainFeature" Component_="libopenal1.dll"/>
     <ROW Feature_="MainFeature" Component_="openalinfo.exe"/>
+    <ROW Feature_="MainFeature" Component_="openal.dll"/>
     <ROW Feature_="MainFeature" Component_="al.h"/>
     <ROW Feature_="MainFeature" Component_="OpenALConfig.cmake"/>
     <ROW Feature_="MainFeature" Component_="libopenal.dll.a"/>
@@ -188,13 +176,11 @@
     <ROW Feature_="MainFeature" Component_="alsoftrc.sample"/>
     <ROW Feature_="MainFeature" Component_="DefaultHRTF.mhr"/>
     <ROW Feature_="MainFeature" Component_="D7.1.ambdec"/>
-    <ROW Feature_="MainFeature" Component_="Software"/>
     <ROW Feature_="MainFeature" Component_="TheFlightSims"/>
-    <ROW Feature_="MainFeature" Component_="Version"/>
     <ROW Feature_="MainFeature" Component_="Path"/>
-  </COMPONENT>
-  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
-    <ROW Name="gnuwindows.exe" SourcePath="..\gnu-windows.ico" Index="0"/>
+    <ROW Feature_="MainFeature" Component_="ProductID"/>
+    <ROW Feature_="MainFeature" Component_="Version"/>
+    <ROW Feature_="MainFeature" Component_="isExtendable"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
@@ -203,32 +189,27 @@
     <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
     <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
-    <ROW Action="AI_DetectSoftware" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
-    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
     <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
     <ROW Action="AI_DpiContentScale" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
-    <ROW Action="AI_DetectSoftware" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
     <ROW Condition="( Version9X OR VersionNT64 )" Description="[ProductName] cannot be installed on [WindowsTypeNTDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
-    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
-    <ROW Condition="AI_DETECTED_PHYSICAL_MEMORY &gt;= AI_REQUIRED_PHYSICAL_MEMORY" Description="[ProductName] cannot be installed on systems with less physical memory than [AI_REQUIRED_PHYSICAL_MEMORY] MB." DescriptionLocId="AI.LaunchCondition.RAM" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64) AND VersionNT &gt;= 600 AND MsiNTProductType &gt;= 1" Description="Windows Vista/Server 2008 (64- bit) and later. Domain Controller is installable."/>
     <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
-    <ROW Condition="VersionNT &gt;= 601 AND VersionNT64" Description="Windows 7, Windows 8/Server 2012 or later, with 64-bit&#9;"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
-    <ROW Registry="MesonNinjaBuildExtensionforGNUWindo" Root="2" Key="Software\TheFlightSims\OpenAL Extension for GNU Windows" Name="\"/>
-    <ROW Registry="Path" Root="2" Key="Software\TheFlightSims\OpenAL Extension for GNU Windows" Name="Path" Value="[APPDIR]" Component_="Path"/>
-    <ROW Registry="Software" Root="2" Key="Software" Name="+" Component_="Software"/>
+    <ROW Registry="Path" Root="2" Key="Software\TheFlightSims\GNU Windows - OpenAL Extension" Name="Path" Value="[APPDIR]" Component_="Path"/>
+    <ROW Registry="ProductID" Root="2" Key="Software\TheFlightSims\GNU Windows - OpenAL Extension" Name="ProductID" Value="[ProductID]" Component_="ProductID"/>
     <ROW Registry="TheFlightSims" Root="2" Key="Software\TheFlightSims" Name="+" Component_="TheFlightSims"/>
-    <ROW Registry="Version" Root="2" Key="Software\TheFlightSims\OpenAL Extension for GNU Windows" Name="Version" Value="[ProductVersion]" Component_="Version"/>
+    <ROW Registry="Version" Root="2" Key="Software\TheFlightSims\GNU Windows - OpenAL Extension" Name="Version" Value="[ProductVersion]" Component_="Version"/>
+    <ROW Registry="isExtendable" Root="2" Key="Software\TheFlightSims\GNU Windows - OpenAL Extension" Name="isExtendable" Value="#x1" Component_="isExtendable" VirtualValue="#x"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="classic"/>
